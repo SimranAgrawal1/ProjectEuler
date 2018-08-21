@@ -1,6 +1,6 @@
 public class LargestPallindrome {
 	public static void main(String[] args) {
-		int pro=0;
+		int pro=0,max=0;
 		boolean bool=true;
 		for(int i=999;i>=100;i--)
 		{
@@ -10,13 +10,15 @@ public class LargestPallindrome {
 				bool=IsPallindrome(pro);
 				if(bool)
 				{
-					System.out.println("Largest product is "+i+"*"+j+"="+pro);
-					break;
+					if(pro>max)
+					{
+						max=pro;
+						break;
+					}
 				}
 			}
-			if(bool)
-				break;
 		}
+		System.out.println(max);
 	}
 	static boolean IsPallindrome(int val)
 	{
@@ -33,5 +35,6 @@ public class LargestPallindrome {
 		else
 			return false;
 	}
+
 
 }
