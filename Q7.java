@@ -5,7 +5,7 @@ public class Prime1001st {
 		 int c=0;
 		 while(i>0)
 		 {
-			 for(long j=2;j<=i;j++)
+			 for(long j=2;j<=Math.sqrt(i);j++)
 			 {
 				 if(i%j==0)
 				 {
