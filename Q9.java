@@ -7,14 +7,14 @@ public class PythagoranTriplet {
 			{
 				for(int c=b+1;c<1000;c++)
 				{
-						if(a*a+b*b==c*c)
+						if((a*a+b*b==c*c) && (a+b+c==1000))
 						{
-							if(a+b+c==1000)
-							{
+		
+							
 								System.out.println("Pythagoran triplet is:"+a+" "+b+" "+c+" ");
 								System.out.println(a*b*c);
 								break;
-							}
+							
 						}
 					
 				}
